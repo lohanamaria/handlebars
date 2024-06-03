@@ -1,2 +1,7 @@
 <h1>Usuário(a) {{nome}}</h1>
 <p>Id: {{id}}</p>
+{{#if usuario.endereco}}
+<p>Endereço: {{usuario.endereco}}</p>
+{{else}}
+<p> Não há endereço cadastrado!</p>
+{{/}}
