@@ -1,4 +1,5 @@
 <h1>Página inicial</h1>
+
 {{#if usuarios}}
 <table border="1">
 <tr>
@@ -13,7 +14,8 @@
    <td>{{this.nome}}</td>
    <td>{{this.endereco}} </td> 
   </tr>
+  {{/each}}
 </table>
 {{else}}
 <p> Não há usuários cadastrados</p>
-{{/}}
+{{/if}}
